@@ -2,11 +2,12 @@
 jest--> framework de pruebas desarrollado por facebook, utilizado principamente para pruebas unitarias y de integracion (comprueba si las respuestas de las peticiones son correctas)
 supertest-->biblioteca de pruebas para bruebas de integracion en aplicaciones nodejs que utilizen servidores http, permite simular solicitudes http a un servidor nodejs (hace las peticiones)
 TDD--> test drie deelopment, las pruebas dirigen el desarrollo, primero se hacen las pruebas y luego se hace el codigo
+uuid-->se instala con npm, nos permite generar id aleatorias
 
 //comandos
 node src/index.js  //ejecuta el archivo index.js
 npx jest           //busca los archivos de test en todo el codigo y los ejecuta
-NODE_OPTIONS="--experimental-vm-modules" npx jest  //buscamos los archivos pero permitiendo ejecutar los exports, para evitar poner este comando siempre remplazamos el contenido del tees en los scripts por "NODE_OPTIONS=--experimental-vm-modules jest"
+NODE_OPTIONS="--experimental-vm-modules" npx jest  //buscamos los archivos pero permitiendo ejecutar los exports, para evitar poner este comando siempre remplazamos el contenido del tees en los scripts por "NODE_OPTIONS=--experimental-vm-modules jest --detectOpenHandles" 
 npm tet            //recorre con el nuevo script personalizado
 
 //convenciones
